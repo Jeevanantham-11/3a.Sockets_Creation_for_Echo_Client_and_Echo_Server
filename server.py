@@ -10,7 +10,7 @@ while True:
     if clientMessage=="exit":
         print("Client disconnected")
         break
-    print("Client >", clientMessage)
+    print("Echo of Client >", clientMessage)
     reply = input("Server > ")
     c.send(reply.encode())
 c.close()

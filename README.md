@@ -87,7 +87,7 @@ while True:
     if clientMessage=="exit":
         print("Client disconnected")
         break
-    print("Client >", clientMessage)
+    print("Echo of Client >", clientMessage)
     reply = input("Server > ")
     c.send(reply.encode())
 c.close()
@@ -104,14 +104,11 @@ while True:
     if msg=="exit":
         print("Disconnected")
         break
-    print("Server >", s.recv(1024).decode())
+    print("Echo of Server >", s.recv(1024).decode())
 s.close()
 ```
 ## OUPUT
-## Server Output:
-![alt text](<Screenshot 2026-02-12 114636.png>)
-## Client Output:
-![alt text](<Screenshot 2026-02-12 114608.png>)
+![alt text](<Screenshot 2026-02-13 213216.png>)
 ## RESULT
 Thus, the python program for creating Echo Client and Echo Server using TCP Sockets Links 
 was successfully created and executed.

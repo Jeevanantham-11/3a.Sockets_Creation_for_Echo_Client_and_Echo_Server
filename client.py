@@ -7,5 +7,5 @@ while True:
     if msg=="exit":
         print("Disconnected")
         break
-    print("Server >", s.recv(1024).decode())
+    print("Echo of Server >", s.recv(1024).decode())
 s.close()
